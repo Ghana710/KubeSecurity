@@ -79,3 +79,5 @@ jobs:
         export POD_NAME=$(kubectl get pods -o=name | grep kube-bench | sed "s/^.\{4\}//")
         echo $POD_NAME
         kubectl logs $POD_NAME
+        
+        
